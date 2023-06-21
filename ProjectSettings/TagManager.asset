@@ -6,8 +6,16 @@ TagManager:
   tags:
   - Enemy
   - FocalPoint
-  - PowerUp
   - PowerupIndicator
+  - EnemyM
+  - EnemyH
+  - IndicatorFire
+  - Bullet
+  - PowerUpFire
+  - PowerUpStrength
+  - PowerUp
+  - Boss
+  - MiniBoss
   layers:
   - Default
   - TransparentFX

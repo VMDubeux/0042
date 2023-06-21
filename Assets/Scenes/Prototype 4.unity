@@ -279,8 +279,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53246a85e6dd030458d13b8761c1fda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 6293328177683850679, guid: ca6714ecd89e1504eae4f57e71e28dc8, type: 3}
-  PowerUps: {fileID: 2917167727572414800, guid: 6e059aaa523a02448b2c323b45edbd8c, type: 3}
+  Enemy:
+  - {fileID: 6293328177683850679, guid: ca6714ecd89e1504eae4f57e71e28dc8, type: 3}
+  - {fileID: 3878819995027534222, guid: acbe5244236606743ab2aef1fb663864, type: 3}
+  - {fileID: 5261644207350467601, guid: 864a3cc33bd57fa499d8445fdfaa44a9, type: 3}
+  PowerUpsPrefabs:
+  - {fileID: 2917167727572414800, guid: 6e059aaa523a02448b2c323b45edbd8c, type: 3}
+  - {fileID: 5885709842497595004, guid: 2d685dd0c140e8643bba2d2edf671537, type: 3}
+  - {fileID: 5313649248279229489, guid: e29d32f5c976d964281bb35c49e93adc, type: 3}
+  BossPrefab: {fileID: 7998623138166085466, guid: 499edfca3f716a64eb1c330e056c2d21, type: 3}
+  MiniEnemiesPrefabs:
+  - {fileID: 339481276994915603, guid: e8fce84fb26bbea49bf254e60d7cae1f, type: 3}
 --- !u!4 &1195175582
 Transform:
   m_ObjectHideFlags: 0
@@ -483,7 +492,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1758629138285362, guid: 11a653b9169986c4f9436a3002fb4516, type: 3}
       propertyPath: m_Name
-      value: PowerupIndicator
+      value: PowerupIndicator_Strength
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758629138285362, guid: 11a653b9169986c4f9436a3002fb4516, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4165187268090244, guid: 11a653b9169986c4f9436a3002fb4516, type: 3}
       propertyPath: m_RootOrder
@@ -658,8 +671,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04134322273f5e24eb62fcfe389df5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hasPowerUp: 0
+  CurrentPowerUps: 0
+  BulletPrefab: {fileID: 3473762713278841109, guid: 8ac9c4fc06aed3e4cac4c0735c749bcf, type: 3}
   PowerupIndicator: {fileID: 383369048}
+  _hangTime: 0
+  _smashSpeed: 0
+  _explosionForce: 0
+  _explosionRadius: 0
 --- !u!1001 &1403545340
 PrefabInstance:
   m_ObjectHideFlags: 0
